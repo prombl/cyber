@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rob</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="css/highstl.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/Shacke.css" rel="stylesheet">
+<link href="css/preloader.css" rel="stylesheet">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/kill.js"></script>
+<style>
+@font-face{font-family:Pompadur;src:url(fonts/font.eot);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}
+@font-face{font-family:Bazy;src:url(fonts/bazy.eot);src:local(bazy),url(fonts/bazy.ttf);}
+body, a:link{cursor:url(images/cursor/cursor.cur), default;} a:hover {cursor:url(images/cursor/cursor2.cur),pointer;}
+</style>  
+</head>
+
+<body onmousedown="return false" onselectstart="return false"> 
+<div class="preloader"><div class="pl-l"></div><div class="pl-r"></div><div class="pl-line"><div></div></div></div>
+<style>body{overflow:hidden}</style>
+<script>disableWheelScroll();</script>
+<div id="star" class="video mask overlay">
+<i class="volume-button fa fa-volume-up"></i>
+<i class="stop-button fa fa-pause"></i>
+<i onclick="refresh();" class="brefreshbutton fa fa-refresh"></i>
+<div class="video-fallback"></div>
+<video id="video" onloadstart="this.volume=0.5" loop autoplay>
+<source src="videos/preload/Desiigner - Panda.mp4">  
+</video>   
+<canvas class="cover"></canvas>
+</div>
+
+
+
+
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="awrapper">
+<div class="titles animated rubberBand" style="animation-delay: 3s;">
+<div class="animated zoomIn" style="animation-delay: 2s;">
+<h1><font color="#FF1493">#</font><font color="#FFFFFF">Rob</font><font color="#FF1493"></font></h1>
+</div></div>
+<div class="media animated fadeInUpBig" style="animation-delay: 2s;">
+<a href="https://vk.com/petrosyan" id="vk" title="Я Вконтакте!" target="_blank">
+<i class="fa fa-vk hvr-grow"></i>
+</a>
+<a href="http://t.me/norsecorp" target="_blank">
+<i class="fa fa-paper-plane hvr-grow" title="Написать мне сообщение!"></i>
+</a>
+<a href="https://qiwi.me/rob" target="_blank">
+<i class="fa fa-usd hvr-grow" title="Пожертвования) на доброе дело!"></i>
+</a>
+</div>
+</div>
+<div class="animated zoomIn" style="animation-delay: 4s;">
+<a href="ban"><div class="button shake-slow shake-constant">TRIGGERED</div></a></div>
+</div></div>
+
+<div class="pagebottom">
+<center>
+<marquee height="50" width="850"> <font color="#FFFFFF"><p class="marq"> </p></font></marquee>
+</center>
+</div>  
+</body>
+
+<script>
+var _d = document,
+    _p = _d.querySelector('.preloader');
+
+console.log(_p)
+
+setTimeout(function(){
+  _p.classList.add('is-loaded')
+}, 1000);
+</script>
+</html>
